@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffeline</title>
+    <link rel="stylesheet" href="caffeline.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="#">
+                <img src="Untitled design (1).png" alt="Caffeline Logo" class="logo-img">
+                <span class="logo-text">CAFFELINE</span>
+            </a>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <a href="#Featured-Items">Featured</a>
+            <a href="index.html">Menu</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+   <section class="hero" id="Home">
+        <div class="hero-container">
+            <img src="hero2.jpg" alt="meow">
+            
+        
+            <div class="hero-welcome">
+                <h2>CAFFELINE</h2>
+                <p>Your cozy neighborhood cat café where artisanal coffee meets feline comfort.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="Contact-Us">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h1>Get in Touch</h1>
+                <h3>We'd love to hear from you!</h3>
+                <p>If you have any inquiries or just want to say hi, please use the contact form!</p>
+                
+                <div class="contact-detail">
+                    <div class="detail-row">
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:caffeline.purryou@gmail.com">caffeline.purryou@gmail.com</a>
+                    </div>
+
+                    <div class="detail-row">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <div class="name-row">
+                        <div class="form-set">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+                        <div class="form-set">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </div>
+
+                        <div class="form-set">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+                        <div class="form-set">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5"></textarea>
+                        </div>
+
+                        <div class="form-button">
+                            <button type="submit" class="submit-btn">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="Contact">
+        <div class="footer-container">
+           <div class="row">
+                <div class="footer-deets">
+                    <h4>Caffeline</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div> 
+                
+                <div class="footer-deets">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Payment Method</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-deets">
+                    <h4>Our Menu</h4>
+                    <ul>
+                        <li><a href="#">Coffee & Drinks</a></li>
+                        <li><a href="#">Pastries & Bakery</a></li>
+                        <li><a href="#">All-Day Bites</a></li>
+                        <li><a href="#">Breakfast & Brunch</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-deets">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook text-white mx-0"></i></a>
+					    <a href="#"><i class="fab fa-twitter-square text-white mx-4"></i></a>
+					    <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const contactForm = document.querySelector(".contact-form");
+
+        contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        alert("Message sent!");
+        contactForm.reset();
+        });
+    </script>
+</body>
+</html>
